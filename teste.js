@@ -1,4 +1,4 @@
-let numeroSecreto=parseInt(Math.random()*100);
+let numeroSecreto=parseInt(Math.random()*100 + 1);
 let tentativas = 0;
 
 function geranumero()
@@ -28,6 +28,7 @@ function testejogo()
     numeroSecreto=parseInt(Math.random()*100);
     document.getElementById('x').value="";
     document.getElementById('p').innerHTML="Você acertou em "+tentativas+" tentativas";
+    tentativas = 0;
  }
  document.getElementById('x').focus();
 }
